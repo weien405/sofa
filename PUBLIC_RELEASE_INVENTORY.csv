@@ -1,0 +1,16 @@
+asset,planned_public_status,reason
+app.py,eligible after governance approval,Application source code contains no patient data or model binary
+model_backend.py,eligible after governance approval,Inference wrapper verifies a fixed hash and contains no fitted parameters
+requirements.txt,eligible,Pinned runtime dependencies
+.streamlit/config.toml,eligible,Presentation and non-secret runtime settings
+config/input_schema.json,eligible,Input definitions and validation ranges only
+config/model_manifest.json,eligible,Aggregate model facts and expected hash only
+MODEL_CARD.md,eligible,Aggregate study and governance description
+INPUT_DEFINITION_AND_UNIT_AUDIT.csv,eligible,Field definitions and units only
+assets/MIMIC_Test_Global_SHAP_Importance.png,conditional,Aggregate publication figure; confirm journal and institutional release status
+tests/,eligible,Synthetic and static tests only
+XGBoost_FINAL_TRAINING_ONLY_PIPELINE.pkl,not eligible pending written authorization,MIMIC-derived fitted model and preprocessing object
+MIMIC patient-level inputs or predictions,prohibited from public package,Credentialed patient-level research data
+eICU patient-level inputs or predictions,prohibited from public package,Credentialed patient-level research data
+.streamlit/secrets.toml,prohibited,Secrets must never enter version control
+

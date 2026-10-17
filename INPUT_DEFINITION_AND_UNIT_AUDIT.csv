@@ -1,0 +1,15 @@
+order,feature,display_name,type,unit,time_window,valid_range_or_encoding,source_basis,web_handling
+1,platelet_count,Platelet count,continuous,10^9/L,0-24 h earliest valid,1-999,STEP18 audited source and value rule,blank allowed; frozen training median imputation
+2,RRT_any_0_24h,Renal replacement therapy,binary,0/1,0-24 h documented use,"1=documented use; 0=no qualifying use recorded",STEP13/21 audited event definition,explicit selection required
+3,serum_creatinine,Serum creatinine,continuous,mg/dL,0-24 h earliest valid,0.1-11.23,STEP18 audited source and value rule,blank allowed; frozen training median imputation
+4,BUN,Blood urea nitrogen,continuous,mg/dL,0-24 h earliest valid,1-300,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation
+5,invasive_mechanical_ventilation_0_24h,Invasive mechanical ventilation,binary,0/1,0-24 h documented use,"1=documented use; 0=no qualifying use recorded",STEP13/21 audited event definition,explicit selection required
+6,calcium,Total calcium,continuous,mg/dL,0-24 h earliest valid,2-20,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation
+7,vasopressor_any_0_24h,Vasopressor use,binary,0/1,0-24 h documented use,"1=documented use; 0=no qualifying use recorded",STEP13/21 audited event definition,explicit selection required
+8,WBC,White blood cell count,continuous,10^9/L,0-24 h earliest valid,0.1-500,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation
+9,temperature,Temperature,continuous,degrees C,0-6 h earliest valid,25-45,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation
+10,age,Age,continuous,years,ICU admission,18-90; >89 encoded as 90,STEP05/21 frozen encoding,blank allowed; frozen training median imputation
+11,mean_arterial_pressure,Mean arterial pressure,continuous,mmHg,0-6 h earliest valid,15-199,STEP18 audited source and value rule,blank allowed; frozen training median imputation
+12,systolic_bp,Systolic blood pressure,continuous,mmHg,0-6 h earliest valid,20-300,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation
+13,glucose,Glucose,continuous,mg/dL,0-24 h earliest valid,10-2000,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation
+14,hematocrit,Hematocrit,continuous,%,0-24 h earliest valid,5-80,STEP03/13 audited source and value rule,blank allowed; frozen training median imputation

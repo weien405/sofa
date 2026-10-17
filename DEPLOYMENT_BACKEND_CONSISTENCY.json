@@ -1,0 +1,19 @@
+{
+  "model_sha256": "ef4917e9dd145e1699d2dac644798ac24fad8f2b67bc5a2fd80b2f2f12479bf1",
+  "no_refit_performed": true,
+  "deployment_backend": "model_backend.py from STEP24B_STREAMLIT_DEPLOY_PACKAGE",
+  "mimic_heldout": {
+    "n": 820,
+    "max_absolute_difference": 2.6529693553101197e-08,
+    "mean_absolute_difference": 2.114086549502874e-09,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  "eicu_external": {
+    "n": 3633,
+    "max_absolute_difference": 2.7311706563004634e-08,
+    "mean_absolute_difference": 1.8062352480252044e-09,
+    "tolerance": 1e-06,
+    "passed": true
+  }
+}

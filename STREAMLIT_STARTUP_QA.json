@@ -1,0 +1,13 @@
+{
+  "mode": "code-only compliance hold; no model bundled",
+  "python": "3.12.10",
+  "streamlit": "1.56.0",
+  "bind_address": "127.0.0.1",
+  "test_port": 8502,
+  "health_status": 200,
+  "health_body": "ok",
+  "root_status": 200,
+  "server_stopped_after_test": true,
+  "authorized_local_app_test": "PASS; full 14-input form rendered using the original STEP20 model through SOFA2_TRAUMA_MODEL_PATH",
+  "public_model_included": false
+}
